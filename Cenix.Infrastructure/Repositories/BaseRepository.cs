@@ -1,4 +1,5 @@
 using Cenix.Domain.Entities;
+using Cenix.Domain.Extensions;
 using Cenix.Domain.Interfaces;
 using Cenix.Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
@@ -28,13 +29,7 @@ namespace Cenix.Infrastructure.Repositories
 
         public virtual async Task<(IEnumerable<TEntity> Items, int TotalCount)> GetPaginatedAsync(int page, int pageSize)
         {
-            var totalCount = await _dbSet.CountAsync();
-            var items = await _dbSet
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize)
-                .ToListAsync();
-
-            return (items, totalCount);
+            return await _dbSet.PaginateAsync(page, pageSize);
         }
 
         public virtual async Task<TEntity> AddAsync(TEntity entity)
