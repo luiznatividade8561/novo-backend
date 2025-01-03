@@ -26,6 +26,6 @@ namespace Cenix.Domain.Interfaces
         /// <param name="pageSize">The size of each page</param>
         /// <param name="enableTracking">If false, disables change tracking for better performance in read-only scenarios</param>
         /// <returns>A paginated result containing the filtered items</returns>
-        Task<PaginatedResult<TEntity>> GetFilteredAsync(int page, int pageSize, bool enableTracking = false);
+        Task<PaginatedResult<TEntity>> GetFilteredAsync(FilterParams filter, bool enableTracking = false);
     }
 }
