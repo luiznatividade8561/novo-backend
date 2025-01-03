@@ -20,7 +20,8 @@ namespace Cenix.Domain.Interfaces
         /// for custom pagination without repeating Skip/Take logic.
         /// Example: await repository.Query().Where(x => x.IsActive).PaginateAsync(page, pageSize);
         /// </summary>
+        /// <param name="enableTracking">If false, disables change tracking for better performance in read-only scenarios</param>
         /// <returns>An IQueryable for building complex queries</returns>
-        IQueryable<TEntity> Query();
+        IQueryable<TEntity> Query(bool enableTracking = true);
     }
 }

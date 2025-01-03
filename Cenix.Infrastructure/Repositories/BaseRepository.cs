@@ -19,17 +19,18 @@ namespace Cenix.Infrastructure.Repositories
 
         public virtual async Task<TEntity?> GetByIdAsync(int id)
         {
-            return await _dbSet.FindAsync(id);
+            return await Query(enableTracking: false)
+                .FirstOrDefaultAsync(e => e.Id == id);
         }
 
         public virtual async Task<IEnumerable<TEntity>> GetAllAsync()
         {
-            return await _dbSet.ToListAsync();
+            return await Query(enableTracking: false).ToListAsync();
         }
 
         public virtual async Task<(IEnumerable<TEntity> Items, int TotalCount)> GetPaginatedAsync(int page, int pageSize)
         {
-            return await _dbSet.PaginateAsync(page, pageSize);
+            return await Query(enableTracking: false).PaginateAsync(page, pageSize);
         }
 
         public virtual async Task<TEntity> AddAsync(TEntity entity)
@@ -66,9 +67,9 @@ namespace Cenix.Infrastructure.Repositories
             return await _dbSet.AnyAsync(e => e.Id == id);
         }
 
-        public virtual IQueryable<TEntity> Query()
+        public virtual IQueryable<TEntity> Query(bool enableTracking = true)
         {
-            return _dbSet;
+            return enableTracking ? _dbSet : _dbSet.AsNoTracking();
         }
     }
 }
