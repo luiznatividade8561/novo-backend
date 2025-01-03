@@ -1,0 +1,134 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Application\\Cenix.Application.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Application\\Cenix.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Application\\Cenix.Application.csproj",
+        "projectName": "Cenix.Application",
+        "projectPath": "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Application\\Cenix.Application.csproj",
+        "packagesPath": "C:\\Users\\luizn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\luizn\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Domain\\Cenix.Domain.csproj": {
+                "projectPath": "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Domain\\Cenix.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "CenixPackage": {
+              "target": "Package",
+              "version": "[1.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Domain\\Cenix.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Domain\\Cenix.Domain.csproj",
+        "projectName": "Cenix.Domain",
+        "projectPath": "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Domain\\Cenix.Domain.csproj",
+        "packagesPath": "C:\\Users\\luizn\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\luizn\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@Cenix.API_HostAddress = http://localhost:5014
+
+GET {{Cenix.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
