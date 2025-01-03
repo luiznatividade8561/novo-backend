@@ -83,7 +83,7 @@ namespace Cenix.Infrastructure.Repositories
             var query = Query(enableTracking);
             query = ApplyFilters(query, filter);
             
-            var result = await query.PaginateAsync(filter.Page + 1, filter.PageSize); // Convert 0-based to 1-based
+            var result = await query.PaginateAsync(filter.Page, filter.PageSize);
             return new PaginatedResult<TEntity>
             {
                 Items = result.Items,
