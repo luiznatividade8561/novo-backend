@@ -9,7 +9,7 @@ namespace Cenix.Domain.Interfaces
         Task<(IEnumerable<TEntity> Items, int TotalCount)> GetPaginatedAsync(int page, int pageSize);
         Task<TEntity> AddAsync(TEntity entity);
         Task<TEntity> UpdateAsync(TEntity entity);
-        Task DeleteAsync(int id);
+        Task DeleteAsync(TEntity entity);
         Task<bool> ExistsAsync(int id);
         IQueryable<TEntity> Query();
     }

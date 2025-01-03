@@ -60,14 +60,10 @@ namespace Cenix.Infrastructure.Repositories
             return entity;
         }
 
-        public virtual async Task DeleteAsync(int id)
+        public virtual async Task DeleteAsync(TEntity entity)
         {
-            var entity = await GetByIdAsync(id);
-            if (entity != null)
-            {
-                entity.DeletedAt = DateTime.UtcNow;
-                await UpdateAsync(entity);
-            }
+            entity.DeletedAt = AppUtilities.GetDateTimeBrasilia();
+            await UpdateAsync(entity);
         }
 
         public virtual async Task<bool> ExistsAsync(int id)
