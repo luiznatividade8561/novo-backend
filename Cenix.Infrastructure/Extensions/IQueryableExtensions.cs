@@ -2,7 +2,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace Cenix.Domain.Extensions
+namespace Cenix.Infrastructure.Extensions
 {
     /// <summary>
     /// Extension methods for IQueryable to support common operations like pagination

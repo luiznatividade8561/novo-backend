@@ -1,7 +1,9 @@
 using Cenix.Domain.Entities;
-using Cenix.Domain.Extensions;
 using Cenix.Domain.Interfaces;
+using Cenix.Domain.Models;
+using Cenix.Domain.Utils;
 using Cenix.Infrastructure.Context;
+using Cenix.Infrastructure.Extensions;
 using Microsoft.EntityFrameworkCore;
 
 namespace Cenix.Infrastructure.Repositories
@@ -28,9 +30,28 @@ namespace Cenix.Infrastructure.Repositories
             return await Query(enableTracking: false).ToListAsync();
         }
 
-        public virtual async Task<(IEnumerable<TEntity> Items, int TotalCount)> GetPaginatedAsync(int page, int pageSize)
+        public virtual async Task<PaginatedResult<TEntity>> GetPaginatedAsync(int page, int pageSize)
         {
-            return await Query(enableTracking: false).PaginateAsync(page, pageSize);
+            var result = await Query(enableTracking: false).PaginateAsync(page, pageSize);
+            return new PaginatedResult<TEntity>
+            {
+                Items = result.Items,
+                TotalCount = result.TotalCount,
+                Page = page,
+                PageSize = pageSize
+            };
+        }
+
+        public virtual async Task<PaginatedResult<TEntity>> GetFilteredAsync(int page, int pageSize, bool enableTracking = false)
+        {
+            var result = await Query(enableTracking).PaginateAsync(page, pageSize);
+            return new PaginatedResult<TEntity>
+            {
+                Items = result.Items,
+                TotalCount = result.TotalCount,
+                Page = page,
+                PageSize = pageSize
+            };
         }
 
         public virtual async Task<TEntity> AddAsync(TEntity entity)
