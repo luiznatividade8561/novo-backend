@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cenix.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c99bf438fa2c311fb1948ea7c987184ba8d7a04a")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cenix.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cenix.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "161UC+mLzUM=",
+  "dgSpecHash": "ozfa9WU5BMNZrr5DVd3JEBWpAEgDpeZjHrxXA5/f0KeM3aofEhYGHbhzJEO5ErWneuws8WwByFEWXwaaPHJ5NA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Domain\\Cenix.Domain.csproj",
+  "projectFilePath": "/home/ubuntu/repos/novo-backend/Cenix.Domain/Cenix.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

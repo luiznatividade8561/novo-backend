@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Application\\Cenix.Application.csproj": {}
+    "/home/ubuntu/repos/novo-backend/Cenix.Application/Cenix.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Application\\Cenix.Application.csproj": {
+    "/home/ubuntu/repos/novo-backend/Cenix.Application/Cenix.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Application\\Cenix.Application.csproj",
+        "projectUniqueName": "/home/ubuntu/repos/novo-backend/Cenix.Application/Cenix.Application.csproj",
         "projectName": "Cenix.Application",
-        "projectPath": "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Application\\Cenix.Application.csproj",
-        "packagesPath": "C:\\Users\\luizn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Application\\obj\\",
+        "projectPath": "/home/ubuntu/repos/novo-backend/Cenix.Application/Cenix.Application.csproj",
+        "packagesPath": "/home/ubuntu/.nuget/packages/",
+        "outputPath": "/home/ubuntu/repos/novo-backend/Cenix.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\luizn\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/ubuntu/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Domain\\Cenix.Domain.csproj": {
-                "projectPath": "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Domain\\Cenix.Domain.csproj"
+              "/home/ubuntu/repos/novo-backend/Cenix.Domain/Cenix.Domain.csproj": {
+                "projectPath": "/home/ubuntu/repos/novo-backend/Cenix.Domain/Cenix.Domain.csproj"
               }
             }
           }
@@ -36,11 +36,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -68,21 +63,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.111/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Domain\\Cenix.Domain.csproj": {
+    "/home/ubuntu/repos/novo-backend/Cenix.Domain/Cenix.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Domain\\Cenix.Domain.csproj",
+        "projectUniqueName": "/home/ubuntu/repos/novo-backend/Cenix.Domain/Cenix.Domain.csproj",
         "projectName": "Cenix.Domain",
-        "projectPath": "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Domain\\Cenix.Domain.csproj",
-        "packagesPath": "C:\\Users\\luizn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Domain\\obj\\",
+        "projectPath": "/home/ubuntu/repos/novo-backend/Cenix.Domain/Cenix.Domain.csproj",
+        "packagesPath": "/home/ubuntu/.nuget/packages/",
+        "outputPath": "/home/ubuntu/repos/novo-backend/Cenix.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\luizn\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/ubuntu/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -100,11 +95,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -126,7 +116,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.111/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

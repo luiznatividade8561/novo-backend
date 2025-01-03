@@ -4,7 +4,6 @@ using Cenix.Domain.Models;
 using Cenix.Domain.Utils;
 using Cenix.Infrastructure.Context;
 using Cenix.Infrastructure.Extensions;
-using Cenix.Application.DTOs;
 using Microsoft.EntityFrameworkCore;
 
 namespace Cenix.Infrastructure.Repositories
@@ -43,7 +42,7 @@ namespace Cenix.Infrastructure.Repositories
             };
         }
 
-        protected virtual IQueryable<TEntity> ApplyFilters(IQueryable<TEntity> query, FilterParams filter)
+        protected virtual IQueryable<TEntity> ApplyFilters(IQueryable<TEntity> query, IFilterParams filter)
         {
             // Filtra DeletedAt == null
             query = query.Where(x => x.DeletedAt == null);
@@ -78,7 +77,7 @@ namespace Cenix.Infrastructure.Repositories
             return query;
         }
 
-        public virtual async Task<PaginatedResult<TEntity>> GetFilteredAsync(FilterParams filter, bool enableTracking = false)
+        public virtual async Task<PaginatedResult<TEntity>> GetFilteredAsync(IFilterParams filter, bool enableTracking = false)
         {
             var query = Query(enableTracking);
             query = ApplyFilters(query, filter);

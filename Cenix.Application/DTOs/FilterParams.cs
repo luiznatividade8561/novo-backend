@@ -1,9 +1,11 @@
+using Cenix.Domain.Models;
+
 namespace Cenix.Application.DTOs
 {
     /// <summary>
-    /// Parâmetros para filtragem, ordenação e paginação de consultas
+    /// Implementação concreta dos parâmetros de filtragem, ordenação e paginação
     /// </summary>
-    public class FilterParams
+    public class FilterParams : IFilterParams
     {
         /// <summary>
         /// Filtro opcional por ID específico

@@ -2919,19 +2919,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\luizn\\.nuget\\packages\\": {}
+    "/home/ubuntu/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Infrastructure\\Cenix.Infrastructure.csproj",
+      "projectUniqueName": "/home/ubuntu/repos/novo-backend/Cenix.Infrastructure/Cenix.Infrastructure.csproj",
       "projectName": "Cenix.Infrastructure",
-      "projectPath": "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Infrastructure\\Cenix.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\luizn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Infrastructure\\obj\\",
+      "projectPath": "/home/ubuntu/repos/novo-backend/Cenix.Infrastructure/Cenix.Infrastructure.csproj",
+      "packagesPath": "/home/ubuntu/.nuget/packages/",
+      "outputPath": "/home/ubuntu/repos/novo-backend/Cenix.Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\luizn\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/ubuntu/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2943,8 +2943,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Domain\\Cenix.Domain.csproj": {
-              "projectPath": "C:\\Users\\luizn\\projects\\radamantes\\balanca\\backend\\Cenix.Domain\\Cenix.Domain.csproj"
+            "/home/ubuntu/repos/novo-backend/Cenix.Domain/Cenix.Domain.csproj": {
+              "projectPath": "/home/ubuntu/repos/novo-backend/Cenix.Domain/Cenix.Domain.csproj"
             }
           }
         }
@@ -2953,11 +2953,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2999,7 +2994,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.111/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
